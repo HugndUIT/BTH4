@@ -51,11 +51,11 @@ istream& operator >> (istream& is, SoPhuc& x) {
 
 ostream& operator << (ostream& os, SoPhuc x) {
     if (x.Ao == 0) 
-        cout << x.Thuc << endl;
+        os << x.Thuc << endl;
     else if (x.Ao > 0) 
-        cout << x.Thuc << " + " << x.Ao << "i\n";
+        os << x.Thuc << " + " << x.Ao << "i\n";
     else 
-        cout << x.Thuc << " - " << fabs(x.Ao) << "i\n";
+        os << x.Thuc << " - " << fabs(x.Ao) << "i\n";
     return os;
 }
 
